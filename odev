@@ -1,0 +1,18 @@
+1. Hepsiburada ana sayfası açılır
+2. Arama alanına “Adidas ayakkabı” yazılır ve arama yapılır
+3. Ürün listeleme sayfasının başarılı şekilde açıldığı doğrulanır
+4. Filtreler alanına girilir
+5. Aşağıdaki filtreler uygulanır:
+○ Cinsiyet: Erkek
+○ Renk: Beyaz
+○ Numara: 42
+○ Fiyat Aralığı: 3.000 TL – 5.000 TL
+6. Filtrelerin doğru şekilde uygulandığı ve sonuçların güncellendiği doğrulanır
+7. Listelenen ürünlerin seçilen filtre kriterlerine uygun olduğu kontrol edilir
+8. Listeleme ekranında yer alan ürünlerden herhangi biri seçilir
+9. Ürün detay sayfasında “Sepete Ekle” butonuna tıklanır
+10. Kullanıcı login olmadan sepete yönlendirilir
+11. Sepet sayfasında:
+○ Eklenen ürünün sepette yer aldığı
+○ Ürün adının, fiyatının ve temel bilgilerinin görüntülendiği
+doğrulanır
