@@ -47,8 +47,8 @@ Ana sayfadan sepet doğrulamasına kadar tam bir alışveriş akışını test e
 
 Test aşağıdaki filtre parametreleri ile çalışır:
 
-| Parametre | Açıklama | Örnek Değer |
-|-----------|----------|-------------|
+| Parametre | Örnek Değer |
+|-----------|-------------|
 | Aranacak ürün | `Adidas ayakkabi` |
 | Cinsiyet filtresi | `Erkek` |
 | Renk filtresi | `Beyaz` |
