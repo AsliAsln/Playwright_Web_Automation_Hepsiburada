@@ -25,6 +25,7 @@ Tests a complete shopping flow from homepage to cart verification:
 
 ## 📁 Project Structure
 
+
 ```
 ├── .github/                          # GitHub configurations
 ├── src/
@@ -42,6 +43,19 @@ Tests a complete shopping flow from homepage to cart verification:
 ├── odev                              # Assignment notes
 └── .gitignore
 ```
+
+## ⚙️ Applied Filters
+
+The test uses the following filter parameters:
+
+| Parameter | Description | Example Value |
+|-----------|-------------|---------------|
+| Product to search | `Adidas ayakkabi` |
+| Gender filter | `Erkek` |
+| Color filter | `Beyaz` |
+| Size filter | `42` |
+| Minimum price | `3000` |
+| Maximum price | `5000` |
 
 ## 🚀 Setup & Run
 
