@@ -48,14 +48,14 @@ Tests a complete shopping flow from homepage to cart verification:
 
 The test uses the following filter parameters:
 
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| Product to search | Adidas ayakkabi |
-| Gender filter | Erkek |
-| Color filter | Beyaz |
-| Size filter | 42 |
-| Minimum price | 3000 |
-| Maximum price | 5000 |
+| Parameter | Example Value |
+|-----------|---------------|
+| Product to search | `Adidas ayakkabi` |
+| Gender filter | `Erkek` |
+| Color filter | `Beyaz` |
+| Size filter | `42` |
+| Minimum price | `3000` |
+| Maximum price | `5000` |
 
 ## 🚀 Setup & Run
 
