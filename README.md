@@ -43,19 +43,6 @@ Tests a complete shopping flow from homepage to cart verification:
 └── .gitignore
 ```
 
-## ⚙️ Environment / Test Configuration
-
-The test uses the following filter parameters:
-
-| Parameter | Description | Example Value |
-|-----------|-------------|---------------|
-| Search Query | Product to search | `Adidas ayakkabi` |
-| Gender Filter | Gender filter | `Erkek` |
-| Color Filter | Color filter | `Beyaz` |
-| Size Filter | Size filter | `42` |
-| Price Min | Minimum price | `3000` |
-| Price Max | Maximum price | `5000` |
-
 ## 🚀 Setup & Run
 
 ### Requirements
