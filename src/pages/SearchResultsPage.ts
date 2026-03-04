@@ -23,21 +23,20 @@ private async waitForFilterUpdate(): Promise<void> {
         await expect(this.firstProductTitle).toBeVisible({ timeout: 15000 });
     }
 
-async applyFilters(gender: string, color: string, size: string, minPrice: number, maxPrice: number): Promise<void> {
-        
-        // 1. Cinsiyet (Gender) Filtresi
+    async applyFilterGender(gender: string): Promise<void> 
+    {
         const genderLabel = this.page.locator(`input[name="cinsiyet"][value="${gender}"]`).locator('..');
         await genderLabel.waitFor({ state: 'visible', timeout: 5000 });
         await genderLabel.click();        
         await this.waitForFilterUpdate();
-
-        // 2. Renk (Color) Filtresi
+    }
+    async applyFilterColor(color: string): Promise<void> {
         const colorLabel = this.page.locator(`input[name="renk"][value="${color}"]`).locator('..');
         await colorLabel.waitFor({ state: 'visible', timeout: 5000 });
         await colorLabel.click();
         await this.waitForFilterUpdate();
-
-        // 3. Beden (Size) Filtresi
+    }
+    async applyFilterSize(size: string): Promise<void> {
         const bedenlerPanel = this.page.locator('#bedenler');
         const sizeSearchInput = bedenlerPanel.getByPlaceholder('Filtrele');
        
@@ -55,9 +54,8 @@ async applyFilters(gender: string, color: string, size: string, minPrice: number
             await sizeInput.locator('..').click();
         }
         await this.waitForFilterUpdate();
-
-
-        // 4. Fiyat (Price) Filtresi
+    }
+    async applyFilterPrice(minPrice: number, maxPrice: number): Promise<void> {
         const minPriceInput = this.page.getByPlaceholder('En az');
         const maxPriceInput = this.page.getByPlaceholder('En çok');
 
@@ -75,6 +73,14 @@ async applyFilters(gender: string, color: string, size: string, minPrice: number
         }
 
         await this.waitForFilterUpdate();
+    }
+
+async applyFilters(gender: string, color: string, size: string, minPrice: number, maxPrice: number): Promise<void> {
+        
+        await this.applyFilterGender(gender);
+        await this.applyFilterColor(color);
+        await this.applyFilterSize(size);
+        await this.applyFilterPrice(minPrice, maxPrice);
     }
 
     async verifyFiltersApplied(gender: string, color: string, size: string): Promise<void> {
